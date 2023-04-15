@@ -1,0 +1,247 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+p{
+    font-family: SuisseIntl-Regular,Helvetica,Arial,sans-serif;
+}
+
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    text-align: center;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #fff;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #000000;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+/* navbar start */
+
+
+
+
+.navbar_nav {
+
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    backdrop-filter: blur(5px); 
+  
+
+}
+.nav-position {
+    height: 76px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    right: 0;
+}
+.fa-braille {
+    color: white;
+    margin-left: 2%;
+    font-size: 25px;
+
+}
+
+.navbar-section {
+ background-color: #231F20;
+    height: auto;
+
+}
+
+.nav-btn {
+    background-color: black;
+    color: white;
+    border-radius: 100px;
+    padding: 8px 20px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+
+    text-transform: uppercase;
+
+    color: #FFFFFF
+}
+
+.banner h1{
+    padding-top: 200px;
+    color: white;
+}
+
+/* navbar end */
+
+/* see all projects banner */
+
+.see_all_projects_banner {
+    padding-top: 250px;
+}
+
+.see_all_projects_banner h1 {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 60px;
+    color: #fff;
+}
+
+.projects_box p {
+width: 500px;
+   margin-top: 20px !important;
+    float: none;
+    font-size: 20px;
+    line-height: 32px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    color: #fff;
+
+}
+
+@media screen and (max-width:500px) {
+    .projects_box p {
+        width: 100%;
+           margin-top: 20px !important;
+            float: none;
+            font-size: 20px;
+            line-height: 32px;
+            margin-top: 0;
+            margin-bottom: 0;
+            display: flex;
+            color: #fff;
+        
+        }
+        .see_all_projects_banner {
+            padding-top: 116px;
+        }
+}
+
+/* footer-section start */
+
+.footer-section {
+    background-color: black;
+    height: auto;
+}
+
+.footer-h1 {
+    color: white;
+
+}
+
+.footer-p {
+    color: rgba(255, 255, 255, 0.842);
+}
+
+.menu-items {
+    order: 2;
+    display: flex;
+}
+
+.menu-items li {
+    list-style: none;
+    font-size: 1.3rem;
+    color: #81DCD0;
+    margin: 0 20px;
+
+}
+
+.menu-items li a {
+    text-decoration: none;
+    color: #81DCD0;
+}
+
+.service-items {
+    order: 2;
+    display: flex;
+}
+
+.service-items li {
+    list-style: none;
+    color: #cccccc73;
+    margin: 0 20px;
+}
+
+.footer_content {
+    margin-left: 46px;
+}
+
+@media screen and (max-width:482px) {
+    .menu-items {
+
+        flex-direction: column;
+
+    }
+
+    .service-items {
+        flex-direction: column;
+    }
+    .companies_heading{
+        font-size: 35px;
+    }
+
+ 
+
+}

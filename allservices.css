@@ -1,0 +1,320 @@
+*{
+    margin: 0%;
+    padding:0 ;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+p{
+    font-family: SuisseIntl-Regular,Helvetica,Arial,sans-serif;
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    text-align: center;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #fff;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #000000;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+.navbar {
+    height: 80px;
+    background-color:transparent;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(5px);
+}
+
+.fa-braille {
+    color: #000;
+    margin-left: 2%;
+    font-size: 25px;
+
+}
+
+#menu-icon{
+    transition: all 0.3s;
+}
+
+.navbar-section {
+    background-color: #276EFF;
+  position: fixed;
+
+}
+
+.nav-btn {
+    background-color: black;
+    color: white;
+    border-radius: 100px;
+    padding: 8px 20px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+
+    text-transform: uppercase;
+
+    color: #FFFFFF
+}
+
+.banner {
+    margin-top: 150px;
+    color: white;
+}
+
+
+.digital-section{
+    background-color: #f1f1ed;
+
+}
+
+.flexible-product{
+    margin-top: 110px;
+}
+
+.engage-header  h1{
+    color: #000;
+    font-size: 40px;
+    line-height: 52px;
+    text-decoration: underline;
+}
+
+.engage-header p {
+    color: #656263;
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 50px;
+}
+
+.left h2 {
+    padding-top: 20px;
+    color: #231f20;
+    font-size: 32px;
+    line-height: 40px;
+}
+.left p {
+    color: #393536;
+    font-size: 20px;
+    line-height: 32px;
+}
+.right h2 {
+    padding-top: 20px;
+    color: #231f20;
+    font-size: 32px;
+    line-height: 40px;
+}
+.right p {
+    color: #393536;
+    font-size: 20px;
+    line-height: 32px;
+}
+.right{
+    margin-top: 90px;
+}
+
+.digital_experience h6{
+font-size: 44px;
+line-height: 56px;
+padding: 50px 0px;
+width: 70%;
+
+}
+.approaching p{
+    margin-top: 170px;
+    color: #393536;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+    width: 100%;
+
+}
+
+@media screen and (max-width:600px) {
+    .engage-section{
+        text-align: center;
+    }
+    .flexible-product{
+        margin-top: -126px;
+    }
+    .digital_icon{
+        width: 100%;
+        display: block;
+    }
+    .approaching p{
+        margin-top: 10px;
+    }
+    .digital_experience h6 {
+        font-size: 28px;
+        padding: 50px 0px;
+        width: 100%;
+        font-weight: 700;
+        padding-top: 70px;
+    }
+    .engage-header h1 {
+        color: #000;
+        font-size: 35px;
+        line-height: 52px;
+        text-decoration: underline;
+    }
+    
+}
+.customer{
+    background-color: #231f20;
+}
+.customer h1{
+    margin-top: 100px;
+color: white;
+font-size: 33px;
+
+}
+.customer h3{
+    color: rgba(255, 255, 255, 0.719);
+}
+.fa-arrow-right{
+    color: white;
+}
+.icon-text{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.btn-explore{
+    color: white;
+    font-size: 25px;
+}
+/* footer-section start */
+
+.footer-section {
+    background-color: black;
+    height: auto;
+}
+
+.footer-h1 {
+    color: white;
+
+}
+
+.footer-p {
+    color: rgba(255, 255, 255, 0.842);
+}
+
+.menu-items {
+    order: 2;
+    display: flex;
+}
+
+.menu-items li {
+    list-style: none;
+    font-size: 1.3rem;
+    color: #81DCD0;
+    margin: 0 20px;
+
+}
+
+.menu-items li a {
+    text-decoration: none;
+    color: #81DCD0;
+}
+
+.service-items {
+    order: 2;
+    display: flex;
+}
+
+.service-items li {
+    list-style: none;
+    color: #cccccc73;
+    margin: 0 20px;
+}
+
+.footer_content {
+    margin-left: 46px;
+}
+
+@media screen and (max-width:482px) {
+    .menu-items {
+
+        flex-direction: column;
+
+    }
+
+    .service-items {
+        flex-direction: column;
+    }
+    .companies_heading{
+        font-size: 35px;
+    }
+
+ 
+
+}
+
+@media screen and (max-width:1002px) {
+  .all_projects{
+    display: none;
+  }
+  .all_projects_mob{
+    display: block;
+  }
+ 
+
+}
