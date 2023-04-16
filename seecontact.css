@@ -127,6 +127,9 @@ p{
 
     color: #FFFFFF
 }
+.nav-btn:hover{
+    color:#fff !important
+}
 
 .banner h1{
     padding-top: 200px;
@@ -136,10 +139,9 @@ p{
 /* navbar end */
 .contact_section {
 
-    height: auto;
+    height: 500px;
     background-color: #81DCD0;
-    padding-bottom: 30px;
-    padding-top: 70px;
+    padding: 1px;
 
 }
 
@@ -191,7 +193,10 @@ p{
     font-weight: bold;
 
 }
-
+.error{
+    color: red;
+    margin: 0px;
+}
 @media screen and (max-width:950px) {
     .email {
         width: 70%;
@@ -212,5 +217,80 @@ p{
         margin-top: 40px;
         font-family: sans-serif;
     }
+
+}
+.footer-section {
+    background-color: black;
+    height: auto;
+}
+
+.footer-h1 {
+    color: white;
+
+}
+
+.footer-p {
+    color: rgba(255, 255, 255, 0.842);
+}
+
+.menu-items {
+    order: 2;
+    display: flex;
+}
+
+.menu-items li {
+    list-style: none;
+    font-size: 1.3rem;
+    color: #81DCD0;
+    margin: 0 20px;
+
+}
+
+.menu-items li a {
+    text-decoration: none;
+    color: #81DCD0;
+}
+
+.service-items {
+    order: 2;
+    display: flex;
+}
+
+.service-items li {
+    list-style: none;
+    color: #cccccc73;
+    margin: 0 20px;
+}
+
+.footer_content {
+    margin-left: 46px;
+}
+
+@media screen and (max-width:482px) {
+    .menu-items {
+
+        flex-direction: column;
+
+    }
+
+    .service-items {
+        flex-direction: column;
+    }
+    .companies_heading{
+        font-size: 35px;
+    }
+
+ 
+
+}
+
+@media screen and (max-width:1002px) {
+  .all_projects{
+    display: none;
+  }
+  .all_projects_mob{
+    display: block;
+  }
+ 
 
 }

@@ -16,32 +16,28 @@
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Services</a>
-        <a href="#">About</a>
-        <a href="#">Project</a>
-        <a href="#">Contact</a>
+        <a href="./allservices.html">Services</a>
+        <a href="">Profile landing </a>
+        <a href="./seeallprojects.html">Project</a>
+        <a href="./seecontact.html">Contact</a>
     </div>
-
-
-
-    <div class="container-fluid navbar-section">
-      <div class="nav-position">
-        <div class="navbar_nav">
-            <i onclick="openNav()" class="fa-sharp fa-solid fa-braille"><span class="mx-3"> AUXD</span> </i>
-           
-            <a style="text-decoration: none;" href="./seecontact.html" class="nav-btn mx-3">CONTACT ME</a>  
-
+    <div class="container-fluid navbar-section" style="padding-top: 50px;">
+        <div class="nav-position">
+          <div class="navbar_nav">
+              <i onclick="openNav()" class="fa-sharp fa-solid fa-braille"><span class="mx-3"> AUXD</span> </i>
+              <a style="text-decoration: none;" href="./seecontact.html" class="nav-btn mx-3">CONTACT ME</a>
+  
+          </div>
         </div>
+              
+     
+        
       </div>
-            
-   
-       
-    </div>
     
     <div class="container-fluid text-center  ">
     
@@ -50,18 +46,50 @@
 
             <div class="contact_section">
                 <h1>Contact Us</h1>
+                <form action="" onsubmit="return validateForm()">
                 <div class="mt-5">
-                    <input class="email " type="text" required>
+                    <input id="useremail" class="email " placeholder="    Your E-mail" type="text">
+                    <p id="usererror" class="error"></p>
                 </div>
-
-                <form>
-                    <textarea class="message_textarea" required></textarea>
-                </form>
-                <button class="contact-btn">SEND MESSAGE</button>
+                    <textarea id="usermassage" class="message_textarea" placeholder="Your Massage....."></textarea>
+                    <p id="msgerror" class="error"></p>
+                <input type="submit" class="contact-btn">
+            </form>
             </div>
     </div>
     </div>
+    <div class="container-fluid footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="footer_content">
+                        <h2 class="footer-h1 mt-5">The Office of Footer</h2>
+                        <p class="footer-p mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
+                            animi sed dolore facere eum.!</p>
+                    </div>
+
+                    <div>
+                        <ul class="menu-items mt-5">
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Project</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+
+                        <ul class="service-items mt-5">
+                            <li>LINKEDIN</li>
+                            <li>INSTAGRAM</li>
+                            <li>UPWORK</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <script>
+      
         /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
         function openNav() {
   document.getElementById("mySidenav").style.width = "100%";
@@ -72,6 +100,23 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
+   
+         let useremail = document.getElementById('useremail')
+         let usermassage = document.getElementById('usermassage')
+         function validateForm(){
+            if(useremail.value == ""){
+                document.getElementById("usererror").innerHTML = "user E-mail is empty"
+            }
+            if(usermassage.value == ""){
+                document.getElementById("msgerror").innerHTML = "user Massage is empty"
+                }else if (usermassage.value.length < 70){
+                document.getElementById("msgerror").innerHTML = "Your Massage contain maximum 10 words"
+
+                }
+
+
+            return false;
+         }
     </script>
 </body>
 </html>

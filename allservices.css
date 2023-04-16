@@ -115,6 +115,9 @@ p{
 
     color: #FFFFFF
 }
+.nav-btn:hover{
+    color:#fff !important
+}
 
 .banner {
     margin-top: 150px;

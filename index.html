@@ -24,9 +24,9 @@
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="./allservices.html">Services</a>
-        <a href="#">About</a>
-        <a href="#">Project</a>
-        <a href="#">Contact</a>
+        <a href="">Profile landing </a>
+        <a href="./seeallprojects.html">Project</a>
+        <a href="./seecontact.html">Contact</a>
     </div>
 
 
@@ -199,22 +199,25 @@
     </div>
 
 
-    <div class="container-fluid ">
+     
+    <div class="container-fluid  ">
+    
         <div class="row">
 
 
             <div class="contact_section">
-                <h1>Got a project to discuss ? Drop me a line</h1>
+                <h1>Got a project to discuss ? Drop me a line .</h1>
+                <form action="" onsubmit="return validateForm()">
                 <div class="mt-5">
-                    <input class="email " type="text">
+                    <input id="useremail" class="email " placeholder="    Your E-mail" type="text">
+                    <p id="usererror" class="error"></p>
                 </div>
-
-                <form>
-                    <textarea class="message_textarea"></textarea>
-                </form>
-                <button href="./seecontact.html" class="contact-btn">SEND MESSAGE</button>
+                    <textarea id="usermassage" class="message_textarea" placeholder="Your Massage....."></textarea>
+                    <p id="msgerror" class="error"></p>
+                <input type="submit" class="contact-btn">
+            </form>
             </div>
-        </div>
+    </div>
     </div>
     <div class="container-fluid footer-section">
         <div class="container">
@@ -256,7 +259,22 @@
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+let useremail = document.getElementById('useremail')
+         let usermassage = document.getElementById('usermassage')
+         function validateForm(){
+            if(useremail.value == ""){
+                document.getElementById("usererror").innerHTML = "user E-mail is empty"
+            }
+            if(usermassage.value == ""){
+                document.getElementById("msgerror").innerHTML = "user Massage is empty"
+                }else if (usermassage.value.length < 70){
+                document.getElementById("msgerror").innerHTML = "Your Massage contain maximum 10 words"
 
+                }
+
+
+            return false;
+         }
     </script>
 </body>
 

@@ -127,6 +127,9 @@ p{
 
     color: #FFFFFF
 }
+.nav-btn:hover{
+    color:#fff !important
+}
 
 .banner h1{
     padding-top: 200px;
