@@ -1,14 +1,32 @@
-*{
+* {
     margin: 0%;
-    padding:0 ;
+    padding: 0%;
     box-sizing: border-box;
-    font-family: 'Poppins';
-    font-style: normal;
+    font-family: 'Poppins' !important;
+    font-style: normal !important;
+    text-decoration: none !important;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #fff; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 
-p{
-    font-family: SuisseIntl-Regular,Helvetica,Arial,sans-serif;
-}
+
 /* The side navigation menu */
 .sidenav {
     height: 100%;
@@ -75,36 +93,49 @@ p{
 }
 
 
-.navbar {
-    height: 80px;
-    background-color:transparent;
-    position: fixed;
-    width: 100%;
-    backdrop-filter: blur(5px);
+.navbar_nav {
+
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    background-color: #000000;
+    
+
 }
 
+.auxd-heading {
+    font-weight: 500;
+font-size: 30px;
+line-height: 45px;
+
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+}
+
+.nav-position {
+    height: 76px;
+ 
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    right: 0;
+}
 .fa-braille {
-    color: #000;
+    color: white;
     margin-left: 2%;
     font-size: 25px;
 
 }
 
-#menu-icon{
-    transition: all 0.3s;
-}
 
-.navbar-section {
-    background-color: #276EFF;
-  position: fixed;
-
-}
 
 .nav-btn {
-    background-color: black;
-    color: white;
+    background-color:white;
+    color: black !important;
     border-radius: 100px;
-    padding: 8px 20px;
+    padding: 12px 20px;
     border: none;
     font-weight: 500;
     font-size: 16px;
@@ -115,14 +146,15 @@ p{
 
     color: #FFFFFF
 }
-.nav-btn:hover{
-    color:#fff !important
-}
 
-.banner {
-    margin-top: 150px;
+
+
+.banner h1{
+    padding-top: 200px;
     color: white;
 }
+
+/* navbar end */
 
 
 .digital-section{
@@ -191,7 +223,7 @@ width: 70%;
 
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:1005px) {
     .engage-section{
         text-align: center;
     }
@@ -207,10 +239,10 @@ width: 70%;
     }
     .digital_experience h6 {
         font-size: 28px;
-        padding: 50px 0px;
+        padding: 105px 0px;
         width: 100%;
         font-weight: 700;
-        padding-top: 70px;
+
     }
     .engage-header h1 {
         color: #000;

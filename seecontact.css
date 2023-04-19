@@ -2,13 +2,12 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: 'Poppins';
-    font-style: normal;
+    font-family: 'Poppins' !important;
+    font-style: normal !important;
+    text-decoration: none !important;
+   
 }
 
-p{
-    font-family: SuisseIntl-Regular,Helvetica,Arial,sans-serif;
-}
 
 /* The side navigation menu */
 .sidenav {
@@ -81,15 +80,31 @@ p{
 
 
 
+/* navbar start */
+
+
+
+
 .navbar_nav {
 
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
-    backdrop-filter: blur(5px);
+    background-color: transparent;
   
 
 }
+
+.auxd-heading {
+    font-weight: 500;
+font-size: 30px;
+line-height: 45px;
+
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+}
+
 .nav-position {
     height: 76px;
  
@@ -106,17 +121,13 @@ p{
 
 }
 
-.navbar-section {
-    background-color: #81DCD0;
-    height: auto;
 
-}
 
 .nav-btn {
     background-color: black;
     color: white;
     border-radius: 100px;
-    padding: 8px 20px;
+    padding: 12px 20px;
     border: none;
     font-weight: 500;
     font-size: 16px;
@@ -127,9 +138,8 @@ p{
 
     color: #FFFFFF
 }
-.nav-btn:hover{
-    color:#fff !important
-}
+
+
 
 .banner h1{
     padding-top: 200px;
@@ -137,73 +147,89 @@ p{
 }
 
 /* navbar end */
+/* navbar end */
 .contact_section {
 
-    height: 500px;
-    background-color: #81DCD0;
+    height: 530px;
+    background: rgba(39, 110, 255, 0.2);
     padding: 1px;
 
 }
 
-.contact_section h1 {
-    margin-left: 49px;
-    margin-top: 40px;
+.contact_section h3 {
+    margin-left: 36px;
+    margin-top: 60px;
     font-family: sans-serif;
+    font-weight: bold;
 }
 
 .email {
-    width: 30%;
+    width: 65%;
     height: 30px;
     margin-left: 4%;
     margin-top: 20px;
     border: none;
-    background-color: transparent;
-    border-bottom: 2px solid black;
-    background-color: rgba(0, 0, 0, 0.048);
+    background-color:white;
+    border-radius: 5px;
+
 }
 
 .message_textarea {
 
-    width: 30%;
-    height: 150px;
+    width: 65%;
+    height: 170px;
     padding: 12px 20px;
     box-sizing: border-box;
     border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
+    border-radius: 5px;
     font-size: 16px;
     resize: none;
     margin-top: 30px;
     margin-left: 4%;
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid black;
-    background-color: rgba(0, 0, 0, 0.048);
+    background-color:white;
+
+    
 }
 
 .contact-btn {
-    width: 12%;
-    height: 40px;
-    background-color: white;
+    width: 25%;
+    height: 45px;
+    background-color:black;
     border-radius: 100px;
-    color: #231F20;
+    color:white;
     margin-top: 30px;
+    margin-left: 30px;
     border: none;
     font-size: 12px;
     font-weight: bold;
 
 }
-.error{
-    color: red;
-    margin: 0px;
+.inquiries{
+    margin-left: -5%;
+}
+.General-head{
+margin-top: 150px;
+font-family:sans-serif;
+font-weight:600 !important; 
+font-size: 24px;
+line-height: 36px;
+display: flex;
+align-items: center;
+}
+.Contact-info{
+margin-top: 30px;
+}
+.Contact-info a{
+display: list-item;
+font-size: 18px;
 }
 @media screen and (max-width:950px) {
     .email {
-        width: 70%;
+        width: 100%;
     }
 
     .message_textarea {
-        width: 70%;
+        width: 100%;
     }
 }
 
@@ -219,6 +245,36 @@ p{
     }
 
 }
+@media screen and (max-width:400px){
+    .contact_section{
+        height: auto;
+    }
+ .Contact-info{
+        text-align: center;
+    }
+    .inquiries h2{
+        margin-left: 70px;
+    }
+    .inquiries{
+        margin-left: 0%;
+    }
+    .Contact-info a{
+    display: block !important;
+     font-size: 15px;
+}
+.Contact-info{
+    margin-bottom: 20px !important;
+}
+
+.contact_section h3 {
+    margin-left: 36px;
+    margin-top: 103px !important;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+   
+}
+
 .footer-section {
     background-color: black;
     height: auto;

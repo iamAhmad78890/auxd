@@ -26,38 +26,54 @@
         <a href="./seeallprojects.html">Project</a>
         <a href="./seecontact.html">Contact us</a>
     </div>
-    <div class="container-fluid navbar-section" style="padding-top: 50px;">
-        <div class="nav-position">
-          <div class="navbar_nav">
-              <i onclick="openNav()" class="fa-sharp fa-solid fa-braille"><span class="mx-3"> AUXD</span> </i>
-              <a style="text-decoration: none;" href="./seecontact.html" class="nav-btn mx-3">CONTACT ME</a>
-  
-          </div>
-        </div>
-              
-     
-        
-      </div>
-    
-    <div class="container-fluid text-center  ">
-    
-        <div class="row">
-
-
-            <div class="contact_section">
-                <h1>Contact Us</h1>
-                <form action="" onsubmit="return validateForm()">
-                <div class="mt-5">
-                    <input id="useremail" class="email " placeholder="    Your E-mail" type="text">
-                    <p id="usererror" class="error"></p>
+    <div class="container-fluid navbar-section">
+        <div id="menu-icon" class="nav-position">
+            <div class="navbar_nav">
+                <div class="mx-2">
+                    <img  onclick="openNav()" src="./menu.png" class="img-fluid" style="margin-bottom: 10px; width: 22px;" alt="" />
+                    <span class="mx-3 auxd-heading"> AUXD</span>
                 </div>
-                    <textarea id="usermassage" class="message_textarea" placeholder="Your Massage....."></textarea>
-                    <p id="msgerror" class="error"></p>
-                <input type="submit" class="contact-btn">
-            </form>
+
+
+
+                <a id="butn-menu" style="text-decoration: none;" href="./seecontact.html" class="nav-btn mx-3">CONTACT ME</a>
+
             </div>
+        </div>
     </div>
+    
+    <div class="container-fluid  contact_section ">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-8 col-sm-12">
+                    <div class="">
+                        <h3>Got a project to discuss ? Drop me a line.</h3>
+                        <form action="" onsubmit="return validateForm()">
+                        <div class="mt-5">
+                            <input id="useremail" class="email " placeholder="     write your email here" type="text">
+                            <p id="usererror" class="error "></p>
+                        </div>
+                            <textarea id="usermassage" class="message_textarea" placeholder="write your massage here"></textarea>
+                            <p id="msgerror" class="error "></p>
+                        <button type="submit" class="contact-btn">SEND MASSAGE</button>
+                    </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 inquiries "> 
+                    <h2 class="General-head">For General inquiries,<br>reach me out</h2>
+                    <div class="Contact-info">
+                  
+                        <a>cwahab672@gmail.com</a> 
+                        <br/>
+                        <a>abdulwahabfarooq.44</a>
+                        <br/>   
+                        <a>upwork ID</a>
+                 
+                </div>
+                </div>          
+        </div>
     </div>
+        </div>
     <div class="container-fluid footer-section">
         <div class="container">
             <div class="row">
@@ -89,6 +105,31 @@
         </div>
     </div>
     <script>
+         window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.documentElement.scrollTop < 150) {
+        document.getElementById("menu-icon").style.backgroundColor = "transparent";
+        // document.getElementById("logo").style.fontSize = "35px";
+        document.getElementById("butn-menu").style.backgroundColor = "black";
+        document.getElementById("butn-menu").style.color = "white";
+
+        
+    } if (document.documentElement.scrollTop > 10) {
+        document.getElementById("menu-icon").style.backgroundColor = "black";
+        // document.getElementById("logo").style.fontSize = "25px";
+        document.getElementById("butn-menu").style.backgroundColor = "white";
+        document.getElementById("butn-menu").style.color = "black";
+}
+} if (document.documentElement.scrollTop < 150) {
+    document.getElementById("menu-icon").style.backgroundColor = "transparent";
+    // document.getElementById("logo").style.fontSize = "35px";
+    document.getElementById("butn-menu").style.backgroundColor = "black";
+    document.getElementById("butn-menu").style.color = "white";
+
+
+}
+
       
         /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
         function openNav() {

@@ -32,19 +32,27 @@
 
 
     <div class="container-fluid navbar-section">
-      <div class="nav-position">
-        <div class="navbar_nav">
-            <i onclick="openNav()" class="fa-sharp fa-solid fa-braille"><span class="mx-3"> AUXD</span> </i>
-            <a style="text-decoration: none;" href="./seecontact.html" class="nav-btn mx-3">CONTACT ME</a>
+        <div id="menu-icon" class="nav-position">
+            <div class="navbar_nav">
+                <div class="mx-2">
+                    <img  onclick="openNav()" src="./menu.png" class="img-fluid" style="margin-bottom: 10px; width: 22px;" alt="" />
+                    <span class="mx-3 auxd-heading"> AUXD</span>
+                </div>
 
+
+
+                <a id="butn-menu" style="text-decoration: none;" href="./seecontact.html" class="nav-btn mx-3">CONTACT ME</a>
+
+            </div>
         </div>
-      </div>
-            
-   
+
+
         <div class="banner text-center ">
             <h1>Better experiences mean <br> better business.</h1>
         </div>
     </div>
+
+    <!-- service section -->
 
     <div class="container-fluid services_section">
         <div class="container ">
@@ -63,7 +71,7 @@
 
                     </div>
                     <div class="text-start services_link">
-                        <a href="/allservices.html">See All Services</a>
+                        <a class="all_services" href="/allservices.html">See All Services</a>
                     </div>
                 </div>
                 <div class="col-lg-6  ">
@@ -79,7 +87,7 @@
                     </div>
                     <div class=" services_link technical_experience  text-start  ">
                         <a href="#">Technical Experience</a>
-                        <div class="services_info  ">
+                        <div class="services_info  tech ">
                             <p class="my-2">Lorem ipsum dolor ipsum? Vel voluptatum porro harum?Vel voluptatum porro
                                 harum?</p>
                             <div class="services_all">
@@ -104,6 +112,8 @@
         </div>
 
     </div>
+
+    <!-- service section end -->
     <div class="container mb-5">
 
         <h1 class="my-5 portfolio_section_heading">Extensive Portfolio Projects</h1>
@@ -173,25 +183,37 @@
         <h1 class="companies_heading">I helped Fastest growing startups and Companies</h1>
         <div class="row my-5">
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="box1"></div>
+                <div class="box1">
+                    <img src="./fino.jpg" class="img-fluid d-block m-auto pt-2" alt="">
+                </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="box1"></div>
+                <div class="box1">
+                    <img src="./scan.jpg" class="img-fluid d-block m-auto pt-4" alt="">
+                </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="box1"></div>
+                <div class="box1">
+                    <img src="./ncloud.jpg" class="img-fluid d-block m-auto" alt="">
+                </div>
             </div>
 
         </div>
         <div class="row my-5">
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="box1"></div>
+                <div class="box1">
+                    <img src="./dewiz.jpg" class="img-fluid d-block m-auto" alt="">
+                </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="box1"></div>
+                <div class="box1">
+                    <img src="./umba.jpg" class="img-fluid d-block m-auto pt-2" alt="">
+                </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="box1"></div>
+                <div class="box1">
+                    <img src="./zash.jpg" class="img-fluid d-block m-auto pt-4" alt="">
+                </div>
             </div>
 
         </div>
@@ -199,26 +221,40 @@
     </div>
 
 
-     
-    <div class="container-fluid  ">
-    
-        <div class="row">
-
-
-            <div class="contact_section">
-                <h1>Got a project to discuss ? Drop me a line .</h1>
-                <form action="" onsubmit="return validateForm()">
-                <div class="mt-5">
-                    <input id="useremail" class="email " placeholder="    Your E-mail" type="text">
-                    <p id="usererror" class="error"></p>
+<!-- contact section -->
+    <div class="container-fluid  contact_section ">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-8 col-sm-12">
+                    <div class="">
+                        <h3>Got a project to discuss ? Drop me a line.</h3>
+                        <form action="" onsubmit="return validateForm()">
+                        <div class="mt-5">
+                            <input id="useremail" class="email " placeholder="     write your email here" type="text">
+                            <p id="usererror" class="error "></p>
+                        </div>
+                            <textarea id="usermassage" class="message_textarea" placeholder="write your massage here"></textarea>
+                            <p id="msgerror" class="error "></p>
+                        <button type="submit" class="contact-btn">SEND MASSAGE</button>
+                    </form>
+                    </div>
                 </div>
-                    <textarea id="usermassage" class="message_textarea" placeholder="Your Massage....."></textarea>
-                    <p id="msgerror" class="error"></p>
-                <input type="submit" class="contact-btn">
-            </form>
-            </div>
+                <div class="col-lg-4 col-sm-12 inquiries "> 
+                    <h2 class="General-head">For General inquiries,<br>reach me out</h2>
+                    <div class="Contact-info">
+                  
+                        <a>cwahab672@gmail.com</a> 
+                        <br/>
+                        <a>abdulwahabfarooq.44</a>
+                        <br/>   
+                        <a>upwork ID</a>
+                 
+                </div>
+                </div>          
+        </div>
     </div>
-    </div>
+        </div>
+        <!-- contact-section end -->
     <div class="container-fluid footer-section">
         <div class="container">
             <div class="row">
@@ -250,31 +286,57 @@
         </div>
     </div>
     <script>
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.documentElement.scrollTop < 150) {
+                document.getElementById("menu-icon").style.backgroundColor = "transparent";
+                // document.getElementById("logo").style.fontSize = "35px";
+                document.getElementById("butn-menu").style.backgroundColor = "black";
+                document.getElementById("butn-menu").style.color = "white";
+
+                
+            } if (document.documentElement.scrollTop > 10) {
+                document.getElementById("menu-icon").style.backgroundColor = "black";
+                // document.getElementById("logo").style.fontSize = "25px";
+                document.getElementById("butn-menu").style.backgroundColor = "white";
+                document.getElementById("butn-menu").style.color = "black";
+       }
+        } if (document.documentElement.scrollTop < 150) {
+            document.getElementById("menu-icon").style.backgroundColor = "transparent";
+            // document.getElementById("logo").style.fontSize = "35px";
+            document.getElementById("butn-menu").style.backgroundColor = "black";
+            document.getElementById("butn-menu").style.color = "white";
+
+
+        }
+
+
         /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
         function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
-}
+            document.getElementById("mySidenav").style.width = "100%";
+        }
 
-/* Close/hide the sidenav */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-let useremail = document.getElementById('useremail')
-         let usermassage = document.getElementById('usermassage')
-         function validateForm(){
-            if(useremail.value == ""){
+        /* Close/hide the sidenav */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        let useremail = document.getElementById ('useremail')
+        let usermassage = document.getElementById('usermassage')
+        function validateForm() {
+            if (useremail.value == "") {
                 document.getElementById("usererror").innerHTML = "user E-mail is empty"
             }
-            if(usermassage.value == ""){
+            if (usermassage.value == "") {
                 document.getElementById("msgerror").innerHTML = "user Massage is empty"
-                }else if (usermassage.value.length < 70){
+            } else if (usermassage.value.length < 70) {
                 document.getElementById("msgerror").innerHTML = "Your Massage contain maximum 10 words"
 
-                }
+            }
 
 
             return false;
-         }
+        }
     </script>
 </body>
 

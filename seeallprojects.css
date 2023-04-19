@@ -2,12 +2,29 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: 'Poppins';
-    font-style: normal;
+    font-family: 'Poppins' !important;
+    font-style: normal !important;
+    text-decoration: none !important;
 }
-p{
-    font-family: SuisseIntl-Regular,Helvetica,Arial,sans-serif;
-}
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #fff; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 
 
 
@@ -87,12 +104,24 @@ p{
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
-    backdrop-filter: blur(5px); 
+    background-color: transparent;
   
 
 }
+
+.auxd-heading {
+    font-weight: 500;
+font-size: 30px;
+line-height: 45px;
+
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+}
+
 .nav-position {
     height: 76px;
+ 
     position: fixed;
     width: 100%;
     top: 0px;
@@ -107,7 +136,7 @@ p{
 }
 
 .navbar-section {
- background-color: #231F20;
+    background-color: #231f23;
     height: auto;
 
 }
@@ -116,7 +145,7 @@ p{
     background-color: black;
     color: white;
     border-radius: 100px;
-    padding: 8px 20px;
+    padding: 18px 20px;
     border: none;
     font-weight: 500;
     font-size: 16px;
@@ -127,9 +156,7 @@ p{
 
     color: #FFFFFF
 }
-.nav-btn:hover{
-    color:#fff !important
-}
+
 
 .banner h1{
     padding-top: 200px;
