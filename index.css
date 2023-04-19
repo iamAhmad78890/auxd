@@ -231,6 +231,12 @@ color: #FFFFFF;
     .services_link {
         margin-top: 20px;
     }
+    .services_section {
+        height: auto;
+        background: #231F20;
+        padding-top: 50px;
+    }
+    
 }
 
 @media screen and (max-width:500px) {
