@@ -435,8 +435,7 @@ font-family:sans-serif;
 font-weight:600 !important; 
 font-size: 24px;
 line-height: 36px;
-display: flex;
-align-items: center;
+
 }
 .Contact-info{
 margin-top: 30px;
@@ -474,9 +473,7 @@ font-size: 18px;
     .contact_section h3 {
         margin-left: 20px;
     } 
-    .inquiries h2{
-        margin-left: 70px;
-    }
+   
     .inquiries{
         margin-left: 0%;
     }
@@ -495,6 +492,9 @@ font-size: 18px;
     }
     .inquiries h2{
         text-align: center;
+    }
+    .Contact-info a{
+     list-style-type: none;
     }
 }
 
