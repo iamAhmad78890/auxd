@@ -249,9 +249,7 @@ font-size: 18px;
     .contact_section{
         height: auto;
     }
- .Contact-info{
-        text-align: center;
-    }
+
     .inquiries h2{
         margin-left: 70px;
     }
@@ -273,6 +271,11 @@ font-size: 18px;
     font-weight: bold;
 }
    
+}
+@media screen and (max-width:1000px) {
+    .Contact-info{
+        text-align: center;
+    }
 }
 
 .footer-section {

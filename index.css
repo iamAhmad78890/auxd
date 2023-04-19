@@ -473,9 +473,7 @@ font-size: 18px;
     }
     .contact_section h3 {
         margin-left: 20px;
-    } .Contact-info{
-        text-align: center;
-    }
+    } 
     .inquiries h2{
         margin-left: 70px;
     }
@@ -490,6 +488,11 @@ font-size: 18px;
     margin-bottom: 20px !important;
 }
    
+}
+@media screen and (max-width:1000px) {
+    .Contact-info{
+        text-align: center;
+    }
 }
 
 /* contact-section end */
