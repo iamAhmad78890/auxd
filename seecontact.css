@@ -155,6 +155,13 @@ color: #FFFFFF;
     padding: 1px;
 
 }
+.contact_us_heading{
+    margin-top: 100px !important;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 60px;
+    color: #231F20;
+}
 
 .contact_section h3 {
     margin-left: 36px;

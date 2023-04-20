@@ -356,6 +356,10 @@ color: #FFFFFF;
     height: 250px;
 
 }
+    .box1 img{
+        width: 43%;
+        padding-top: 50px !important;
+    }
 
 @media screen and (max-width:800px) {
     .box1 {
