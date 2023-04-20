@@ -2,12 +2,33 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: 'Poppins' !important;
+    
     font-style: normal !important;
     text-decoration: none !important;
-   
 }
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #fff; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 
+h1, h2, h3,h4,h5,h6,span,p{
+    font-family: 'Poppins' !important;
+}
 
 /* The side navigation menu */
 .sidenav {
@@ -168,6 +189,12 @@ color: #FFFFFF;
     margin-top: 60px;
     font-family: sans-serif;
     font-weight: bold;
+}
+.error{
+    color: red;
+    margin: 0px;
+    margin-left: 25%;
+    margin-top: 5px;
 }
 
 .email {
@@ -331,6 +358,7 @@ font-size: 18px;
     list-style: none;
     color: #cccccc73;
     margin: 0 20px;
+    font-size: 30px;
 }
 
 .footer_content {

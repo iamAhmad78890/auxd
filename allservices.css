@@ -2,7 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: 'Poppins' !important;
+    
     font-style: normal !important;
     text-decoration: none !important;
 }
@@ -26,6 +26,9 @@
     background: #555; 
   }
 
+h1, h2, h3,h4,h5,h6,span,p{
+    font-family: 'Poppins' !important;
+}
 
 /* The side navigation menu */
 .sidenav {
