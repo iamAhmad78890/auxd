@@ -69,9 +69,6 @@ h1, h2, h3,h4,h5,h6,span,p{
 .sidenav a:hover {
     color: #000000;
 }
-#menu-icon{
-
-}
 
 
 /* Position and style the close button (top right corner) */
@@ -167,7 +164,8 @@ color: #FFFFFF;
 
 
 .banner h1{
-    padding-top: 200px;
+    padding-top: 242px;
+    text-align: center;
     color: white;
 }
 
